@@ -1,4 +1,4 @@
-package util;
+package tech.bts.counters.util;
 
 import com.github.jknack.handlebars.Handlebars;
 import com.github.jknack.handlebars.Template;
