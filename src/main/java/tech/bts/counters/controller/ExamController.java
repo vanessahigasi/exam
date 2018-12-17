@@ -32,7 +32,6 @@ public class ExamController {
 
         Map<String,Object> value = new HashMap<>();
         value.put("value",counterService.getValue());
-        value.put("id",counterService.getId());
         return template.apply(value) ;
     }
 
@@ -42,11 +41,4 @@ public class ExamController {
         counterService.icrement();
         response.sendRedirect("/");
     }
-
-    public List<Integer> counters () {
-        return new ArrayList<>();
-    }
-
-
-
 }
